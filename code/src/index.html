@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="main.js"></script>
+    <script type="module" defer src="main.js"></script>
 </head>
 
 <body>
@@ -14,19 +14,19 @@
         <form id="input-form" class="input-values">
             <label for="vw-min">
                 <span>VW min value</span>
-                <input id="vw-min" name="vw-min" type="text">
+                <input id="vw-min" name="vw-min" type="text" value="700">
             </label>
             <label for="size-min">
                 <span>Size min value</span>
-                <input id="size-min" name="size-min" type="text">
+                <input id="size-min" name="size-min" type="text" value="24">
             </label>
             <label for="vw-max">
                 <span>VW max value</span>
-                <input id="vw-max" name="vw-max" type="text">
+                <input id="vw-max" name="vw-max" type="text" value="1000">
             </label>
             <label for="size-max">
                 <span>Size max value</span>
-                <input id="size-max" name="size-max" type="text">
+                <input id="size-max" name="size-max" type="text" value="48">
             </label>
             <button type="submit" id="calculate-btn">Calculate</button>
         </form>

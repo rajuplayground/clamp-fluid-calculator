@@ -23,8 +23,8 @@ inputForm.addEventListener('submit', (e) => {
 })
 
 function calculateClampValueinPX(vwMin, sizeMin, vwMax, sizeMax) {
-    const slope = (sizeMax - sizeMin) / (vwMax - vwMin)
-    const intercept = sizeMin - (slope * vwMin);
+    const slope = (sizeMax - sizeMin) / (vwMax - vwMin) // check linear equation
+    const intercept = sizeMin - (slope * vwMin); // check linear equation
 
     const vwVal = (slope * 100);
 

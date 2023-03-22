@@ -12,7 +12,7 @@ inputForm.addEventListener('submit', (e) => {
     const fluidVals = calculateClampValue(vwMin, sizeMin, vwMax, sizeMax);
     const { vwVal, constVal } = fluidVals
     const operatorSymbol = constVal > 0 ? '+' : '-'
-    clampValWrapper.innerHTML = `<span>clamp(</span>${sizeMin / 16}rem, ${vwVal.toFixed(1)}vw ${operatorSymbol} ${Math.abs(constVal.toFixed(1))}rem , ${sizeMax / 16}rem<span>)</span>`
+    clampValWrapper.innerHTML = `<span>clamp(</span>${sizeMin / 16}rem, ${vwVal}vw ${operatorSymbol} ${Math.abs(constVal)}rem , ${sizeMax / 16}rem<span>)</span>`
 
 })
 
@@ -20,7 +20,7 @@ function calculateClampValue(vwMin, sizeMin, vwMax, sizeMax) {
     let vwVal = 0;
     let constVal = 0;
     const slope = (sizeMax - sizeMin) / (vwMax - vwMin)
-    vwVal = slope * 100;
-    constVal = (sizeMin - (slope * vwMin)) / 16
+    vwVal = (slope * 100).toFixed(1);
+    constVal = ((sizeMin - (slope * vwMin)) / 16).toFixed(1)
     return { vwVal, constVal }
 }

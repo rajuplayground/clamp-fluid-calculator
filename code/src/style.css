@@ -1,3 +1,9 @@
+:root {
+    font-family: 'Inter', sans-serif;
+}
+.main-heading {
+    text-align: center;
+}
 .wrapper {
     display: grid;
     place-content: center;
@@ -13,9 +19,14 @@
     display: flex;
 }
 .input-values label span {
-    flex: 0 0 40%
+    flex: 0 0 50%
 }
 
 #calculate-btn {
     align-self: flex-end;
+}
+
+.clamp-result {
+    font-size: 1rem;
+    font-weight: bold;
 }

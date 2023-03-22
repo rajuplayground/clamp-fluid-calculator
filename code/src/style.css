@@ -1,0 +1,21 @@
+.wrapper {
+    display: grid;
+    place-content: center;
+    padding-top: 100px;
+}
+.input-values {
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    gap: 16px;
+}
+.input-values label {
+    display: flex;
+}
+.input-values label span {
+    flex: 0 0 40%
+}
+
+#calculate-btn {
+    align-self: flex-end;
+}

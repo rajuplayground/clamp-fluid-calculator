@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <form id="input-form" class="input-values">
+            <label for="vw-min">
+                <span>VW min value</span>
+                <input id="vw-min" name="vw-min" type="text">
+            </label>
+            <label for="size-min">
+                <span>Size min value</span>
+                <input id="size-min" name="size-min" type="text">
+            </label>
+            <label for="vw-max">
+                <span>VW max value</span>
+                <input id="vw-max" name="vw-max" type="text">
+            </label>
+            <label for="size-max">
+                <span>Size max value</span>
+                <input id="size-max" name="size-max" type="text">
+            </label>
+            <button type="submit" id="calculate-btn">Calculate</button>
+        </form>
+        <div>
+            <p id="clamp-vals"></p>
+        </div>
+    </div>
+</body>
+
+</html>
